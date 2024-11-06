@@ -4,5 +4,6 @@ RUN mkdir -p /app
 
 COPY . /app
 WORKDIR /app
-RUN npm i
+RUN npm install
 ENTRYPOINT [ "npm", "start" ]
+
